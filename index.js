@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = 'kehsihba321';
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const app = express();
 
